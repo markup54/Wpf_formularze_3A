@@ -19,6 +19,7 @@
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
         </Grid.RowDefinitions>
         <TextBlock 
             FontSize="20"
@@ -53,7 +54,7 @@
         </TextBox>
         <Button
             Grid.Column="1"
-            Grid.Row="3"
+            Grid.Row="4"
             Margin="20"
             Background="#234567"
             Foreground="Aqua"
@@ -92,5 +93,23 @@
            Fill="CadetBlue"
            Height="0"
            Width="0"/>
+        <TextBlock Grid.Row="3"
+                    Foreground="Red"
+            Margin="20"
+                  FontSize="20" 
+                   >Kolor kwadratu</TextBlock>
+        <ComboBox
+            x:Name="kolorComBox"
+            Margin="20"
+            Grid.Row="3"
+            Grid.Column="1"
+            SelectedIndex="0">
+            <ComboBoxItem Content="Red"></ComboBoxItem>
+            <ComboBoxItem Content="Blue"></ComboBoxItem>
+            <ComboBoxItem Content="Purple"></ComboBoxItem>
+            <ComboBoxItem Content="Yellow"></ComboBoxItem>
+            <ComboBoxItem Content="Orange"></ComboBoxItem>
+            <ComboBoxItem Content="Black"></ComboBoxItem>
+        </ComboBox>
     </Grid>
 </Window>
