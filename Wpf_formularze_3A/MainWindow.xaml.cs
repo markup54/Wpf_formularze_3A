@@ -94,6 +94,7 @@ namespace Wpf_formularze_3A
         private void ukryj_Checked(object sender, RoutedEventArgs e)
         {
             kwadrat.Visibility = Visibility.Hidden;
+           
         }
     }
 }
