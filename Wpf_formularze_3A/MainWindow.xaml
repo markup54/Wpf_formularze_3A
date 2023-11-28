@@ -127,10 +127,12 @@
             <RadioButton 
                 GroupName="widocznosc"
                 IsChecked="True"
+                Checked="pokaz_Checked"
                 x:Name="pokaz">
                 Pokaż</RadioButton>
             <RadioButton 
                 GroupName="widocznosc"
+                Checked="ukryj_Checked"
                 x:Name="ukryj">
                 Ukryj</RadioButton>
             <Button Click="Button_Click_1">Zastosuj</Button>

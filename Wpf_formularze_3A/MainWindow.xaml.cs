@@ -85,5 +85,15 @@ namespace Wpf_formularze_3A
                 kwadrat.Visibility = Visibility.Hidden;
             }
         }
+
+        private void pokaz_Checked(object sender, RoutedEventArgs e)
+        {
+            kwadrat.Visibility= Visibility.Visible;
+        }
+
+        private void ukryj_Checked(object sender, RoutedEventArgs e)
+        {
+            kwadrat.Visibility = Visibility.Hidden;
+        }
     }
 }
