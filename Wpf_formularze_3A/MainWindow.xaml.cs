@@ -51,6 +51,38 @@ namespace Wpf_formularze_3A
             {
                 kwadrat.Width = result;
                 kwadrat.Height = result;
+                SolidColorBrush color =
+                    (SolidColorBrush) 
+                    new BrushConverter().ConvertFromString(kolorComBox.Text);
+               kwadrat.Fill = color;
+                if(przezroczystyChbox.IsChecked == true) {
+                    kwadrat.Opacity = 0.5;
+                }
+                else
+                {
+                    kwadrat.Opacity = 1;
+                }            }
+        }
+
+        private void przezroczystyChbox_Checked(object sender, RoutedEventArgs e)
+        {
+            kwadrat.Opacity = 0.5;
+        }
+
+        private void przezroczystyChbox_Unchecked(object sender, RoutedEventArgs e)
+        {
+            kwadrat.Opacity = 1;
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            if(pokaz.IsChecked == true)
+            {
+                kwadrat.Visibility = Visibility.Visible;
+            }
+            if(ukryj.IsChecked == true)
+            {
+                kwadrat.Visibility = Visibility.Hidden;
             }
         }
     }

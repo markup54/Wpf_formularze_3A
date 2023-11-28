@@ -20,6 +20,7 @@
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
         </Grid.RowDefinitions>
         <TextBlock 
             FontSize="20"
@@ -84,11 +85,13 @@
         <Rectangle Grid.Column="2"
            Grid.Row="1"
            Grid.RowSpan="3"
-           Fill="Green"
+           Fill="{Binding 
+            ElementName=kolorComBox, 
+            Path=Text}"
            Height="{Binding ElementName=bokTxt,Path=Text}"
            Width="{Binding ElementName=bokTxt,Path=Text}"/>
         <Rectangle 
-           Grid.Row="3"
+           Grid.Row="4"
             x:Name="kwadrat"
            Fill="CadetBlue"
            Height="0"
@@ -103,7 +106,8 @@
             Margin="20"
             Grid.Row="3"
             Grid.Column="1"
-            SelectedIndex="0">
+            SelectedIndex="0"
+            >
             <ComboBoxItem Content="Red"></ComboBoxItem>
             <ComboBoxItem Content="Blue"></ComboBoxItem>
             <ComboBoxItem Content="Purple"></ComboBoxItem>
@@ -111,5 +115,26 @@
             <ComboBoxItem Content="Orange"></ComboBoxItem>
             <ComboBoxItem Content="Black"></ComboBoxItem>
         </ComboBox>
+        <StackPanel Grid.Row="5">
+        <CheckBox 
+                  x:Name="przezroczystyChbox"
+                  Margin="20"
+                  IsChecked="True"
+                  Checked="przezroczystyChbox_Checked"
+                  Unchecked="przezroczystyChbox_Unchecked"
+                  >Półprzeźroczysty
+        </CheckBox>
+            <RadioButton 
+                GroupName="widocznosc"
+                IsChecked="True"
+                x:Name="pokaz">
+                Pokaż</RadioButton>
+            <RadioButton 
+                GroupName="widocznosc"
+                x:Name="ukryj">
+                Ukryj</RadioButton>
+            <Button Click="Button_Click_1">Zastosuj</Button>
+    </StackPanel>
+        
     </Grid>
 </Window>
