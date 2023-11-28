@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33516.290
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wpf_formularze_3A", "Wpf_formularze_3A\Wpf_formularze_3A.csproj", "{ABFE6EA9-15D6-4993-B8A5-E339AE9CBCA4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ABFE6EA9-15D6-4993-B8A5-E339AE9CBCA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABFE6EA9-15D6-4993-B8A5-E339AE9CBCA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABFE6EA9-15D6-4993-B8A5-E339AE9CBCA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABFE6EA9-15D6-4993-B8A5-E339AE9CBCA4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DBF49786-FF7B-4BEC-A216-0AC157552254}
+	EndGlobalSection
+EndGlobal
