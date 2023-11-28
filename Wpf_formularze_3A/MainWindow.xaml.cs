@@ -96,5 +96,28 @@ namespace Wpf_formularze_3A
             kwadrat.Visibility = Visibility.Hidden;
            
         }
+        private long silnia(int n)
+        {
+            long   s = 1;
+            for(int i = 1; i <= n; i++)
+            {
+                s = s * i;
+            }
+            return s;
+        }
+        private int nwd (int a, int b)
+        {
+            while (b != 0)
+            {
+                int reszta = a % b;
+                a = b;
+                b = reszta;
+            }
+            return a;
+        }
+        private int nww (int a, int b)
+        {
+            return a * b / nwd(a, b);
+        }
     }
 }
